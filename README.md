@@ -53,7 +53,7 @@ The surface, representing the model's predictions across various combinations of
 The actual data points are plotted as blue dots, showing how they relate to the model's predictions.
 This visualization helps in understanding the relationship between weight, horsepower, and the car's mileage as per the model.
 
-<img src="./img/regression.PNG" alt="Regressor">
+<img src="./img/regression.png" alt="Regression">
 
 [download code here ](./src/regression.ipynb)
 
