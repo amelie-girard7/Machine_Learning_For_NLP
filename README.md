@@ -63,7 +63,7 @@ This visualization helps in understanding the relationship between weight, horse
 
 The cluster index resembles a categorical value, such as "cluster 3" or "cluster B," but it initially lacks any intrinsic meaning. Typically, the measurements involved are mulitple and numerical.
 
-<img src="./img/clustering_1.PNG" alt="Clustering">
+<img src="./img/clustering_1.png" alt="Clustering">
 
 [download code here ](./src/clustering.ipynb)
 
