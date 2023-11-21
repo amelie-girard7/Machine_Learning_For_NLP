@@ -168,13 +168,13 @@ Certainly! Let's consider an example where a neural network neuron is used to pr
    - We'll use the sigmoid function for the activation.
 
 **Example Scenario:**
-   - Suppose our person prefers comedies and shorter movies. We might have: $x_1 = 1$ (Comedy), $x_2 = 1.5$ hours.
-   - We assign weights: $ w_1 = 0.8 $ (strong preference for genre), $ w_2 = -0.5 $ (dislikes long movies).
-   - Let's use a bias of $ b = 1 $, assuming the person generally enjoys movies.
+   - Suppose our person prefers comedies and shorter movies. We might have: $$x_1 = 1$$ (Comedy), $$x_2 = 1.5$$ hours.
+   - We assign weights: $$ w_1 = 0.8 $$ (strong preference for genre), $$ w_2 = -0.5 $$ (dislikes long movies).
+   - Let's use a bias of $$ b = 1 $$, assuming the person generally enjoys movies.
 
 **Calculation:**
-   - The weighted sum will be: $ (0.8 \times 1) + (-0.5 \times 1.5) + 1 = 0.8 - 0.75 + 1 = 1.05 $.
-   - Applying the sigmoid function: $ \sigma(1.05) = \frac{1}{1 + e^{-1.05}} \approx 0.74 $.
+   - The weighted sum will be: $$ (0.8 \times 1) + (-0.5 \times 1.5) + 1 = 0.8 - 0.75 + 1 = 1.05 $$.
+   - Applying the sigmoid function: $$ \sigma(1.05) = \frac{1}{1 + e^{-1.05}} \approx 0.74 $$.
    
 In this example, the neuron's output is approximately 0.74, indicating a fairly high likelihood of the person enjoying the comedy movie that lasts 1.5 hours. The genre (comedy) positively influences the prediction, while the duration has a slight negative impact, reflected in the weights and the final output.
 
