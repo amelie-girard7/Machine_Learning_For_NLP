@@ -154,12 +154,12 @@ The inputs are scaled by a series of weights (known as parameters), then summed 
 Certainly! Let's consider an example where a neural network neuron is used to predict the likelihood of someone enjoying a movie based on two inputs: the genre of the movie and the duration of the movie.
 
 **Inputs (x):**
-   - $$x_1 = $$ Movie genre, coded numerically (e.g., 0 for Action, 1 for Comedy, 2 for Drama, etc.).
-   - $$x_2 = $$ Movie duration in hours.
+$$x_1 = $$ Movie genre, coded numerically (e.g., 0 for Action, 1 for Comedy, 2 for Drama, etc.).
+$$x_2 = $$ Movie duration in hours.
 
 **Weights (w):**
-   - $$ w_1 = $$ Weight for movie genre preference. This weight reflects how much the person's enjoyment is influenced by the genre. A higher weight means the genre is very important in deciding whether they'll like the movie.
-   - $$ w_2 = $$ Weight for movie duration preference. This weight reflects the person's tolerance for long movies. A negative weight might indicate a preference for shorter movies.
+$$ w_1 = $$ Weight for movie genre preference. This weight reflects how much the person's enjoyment is influenced by the genre. A higher weight means the genre is very important in deciding whether they'll like the movie.
+$$ w_2 = $$ Weight for movie duration preference. This weight reflects the person's tolerance for long movies. A negative weight might indicate a preference for shorter movies.
 
 **Bias (b):**
    - A bias term that could represent a person's general disposition towards watching movies, regardless of the genre or duration.
