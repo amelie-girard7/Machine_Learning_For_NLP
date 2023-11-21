@@ -158,8 +158,8 @@ $$x_1 = $$ Movie genre, coded numerically (e.g., 0 for Action, 1 for Comedy, 2 f
 $$x_2 = $$ Movie duration in hours.
 
 **Weights (w):**
-$$ w_1 = $$ Weight for movie genre preference. This weight reflects how much the person's enjoyment is influenced by the genre. A higher weight means the genre is very important in deciding whether they'll like the movie.
-$$ w_2 = $$ Weight for movie duration preference. This weight reflects the person's tolerance for long movies. A negative weight might indicate a preference for shorter movies.
+$$w_1 =$$ Weight for movie genre preference. This weight reflects how much the person's enjoyment is influenced by the genre. A higher weight means the genre is very important in deciding whether they'll like the movie.
+$$w_2 =$$ Weight for movie duration preference. This weight reflects the person's tolerance for long movies. A negative weight might indicate a preference for shorter movies.
 
 **Bias (b):**
    - A bias term that could represent a person's general disposition towards watching movies, regardless of the genre or duration.
@@ -169,12 +169,12 @@ $$ w_2 = $$ Weight for movie duration preference. This weight reflects the perso
 
 **Example Scenario:**
    - Suppose our person prefers comedies and shorter movies. We might have: $$x_1 = 1$$ (Comedy), $$x_2 = 1.5$$ hours.
-   - We assign weights: $$ w_1 = 0.8 $$ (strong preference for genre), $$ w_2 = -0.5 $$ (dislikes long movies).
-   - Let's use a bias of $$ b = 1 $$, assuming the person generally enjoys movies.
+   - We assign weights: $$w_1 = 0.8$$ (strong preference for genre), $$w_2 = -0.5$$ (dislikes long movies).
+   - Let's use a bias of $$b = 1$$, assuming the person generally enjoys movies.
 
 **Calculation:**
-   - The weighted sum will be: $$ (0.8 \times 1) + (-0.5 \times 1.5) + 1 = 0.8 - 0.75 + 1 = 1.05 $$.
-   - Applying the sigmoid function: $$ \sigma(1.05) = \frac{1}{1 + e^{-1.05}} \approx 0.74 $$.
+   - The weighted sum will be: $$(0.8 \times 1) + (-0.5 \times 1.5) + 1 = 0.8 - 0.75 + 1 = 1.05$$.
+   - Applying the sigmoid function: $$\sigma(1.05) = \frac{1}{1 + e^{-1.05}} \approx 0.74$$.
    
 In this example, the neuron's output is approximately 0.74, indicating a fairly high likelihood of the person enjoying the comedy movie that lasts 1.5 hours. The genre (comedy) positively influences the prediction, while the duration has a slight negative impact, reflected in the weights and the final output.
 
